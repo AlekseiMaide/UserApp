@@ -1,7 +1,7 @@
 # UserApp
 
 ##### App-Spring
-    gradle clean bootRun;
+    gradle clean bootRun
 
 All sorting, filtering, paging and search operations are supported by a single endpoint:
     
