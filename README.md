@@ -1,5 +1,7 @@
 # UserApp
 
+Uses Gradle as build tool.
+
 ##### App-Spring
     gradle clean bootRun
 
@@ -9,6 +11,9 @@ All sorting, filtering, paging and search operations are supported by a single e
     GET /user?orderBy=firstName:asc,lastName:desc
     GET /user?searchName=searchString
     GET /user?size=50&page=1
+
+###### Run tests by
+    gradle clean test
 
 ##### App-React
 
