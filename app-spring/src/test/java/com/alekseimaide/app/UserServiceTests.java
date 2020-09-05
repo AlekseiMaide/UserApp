@@ -68,6 +68,6 @@ public class UserServiceTests {
         Page<User> result = userService.findAll(spec, Pageable.unpaged());
 
         assertEquals(1, result.getSize());
-        assertTrue(result.get().findFirst().get().getFirstName().equalsIgnoreCase(SEARCH_TERM));
+        assertTrue(result.toList().get(0).getFirstName().equalsIgnoreCase(SEARCH_TERM));
     }
 }
