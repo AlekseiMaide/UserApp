@@ -54,6 +54,7 @@ public class UserServiceTests {
                 previousName = user.getFirstName();
             } else {
                 assertTrue(previousName.compareTo(user.getFirstName()) >= 0);
+                previousName = user.getFirstName();
             }
         }
     }

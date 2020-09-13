@@ -37,9 +37,7 @@ class UserEditView extends React.Component {
                     lastName,
                     dob,
                     email,
-                    address,
-                    errors: {},
-                    errorMessage: null
+                    address
                 })
             }
         )
@@ -91,7 +89,7 @@ class UserEditView extends React.Component {
             return false;
         }
 
-        let message = false;
+        let message = "";
 
         errors.forEach(error => {
             if (error.hasOwnProperty("field") && error.field == fieldName) {
